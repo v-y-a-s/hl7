@@ -1,0 +1,5 @@
+
+
+# Remove all dangling images with <none> tag
+
+docker rmi $(docker images -f "dangling=true" -q)
